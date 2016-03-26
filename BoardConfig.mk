@@ -28,7 +28,12 @@ BOARD_SYSTEMIMAGE_PARTITION_SIZE := 0x105c0000
 BOARD_USERDATAIMAGE_PARTITION_SIZE := 0x105c0000
 BOARD_FLASH_BLOCK_SIZE := 131072
 
-TARGET_PREBUILT_KERNEL := device/emulator/twrp/kernAl
+# Kernel
+
+# TARGET_PREBUILT_KERNEL := device/emulator/twrp/kernAl
+
+TARGET_KERNEL_SOURCE := kernel/google/goldfish
+TARGET_KERNEL_CONFIG := twrp_goldfish_armv7_defconfig
 
 # Recovery:Start
 
